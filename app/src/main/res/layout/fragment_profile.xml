@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:id="@+id/idprofilescroll"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="About Me"
+            android:textAllCaps="true"
+            android:textColor="@color/holud"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Personal Info"
+            android:textAllCaps="true"
+            android:textColor="@color/secondery_text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_color="#ffb400"
+            app:civ_border_width="6dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="First Name:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasibul"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asad"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Age:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nationality:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 years"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bangladeshi"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Freelance:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Available"
+                android:textColor="#44FF00"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Address:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajshahi, Bangladesh"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Phone:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="+880 1799 81 35 08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="panjerihasib@gmail.com"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Linkedin:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Language:"
+                android:textAllCaps="true"
+                android:textColor="@color/secondery_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="panjeri.hasib"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English, Bangla, Hindi"
+                app:layout_constraintStart_toStartOf="@+id/textView28"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <Button
+                android:id="@+id/idbtndownloadcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/holud"
+                android:text="Download CV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="2+"
+                        android:textColor="@color/holud"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Years of \nExperience"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView31"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="10+"
+                        android:textColor="@color/holud"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed \nProjects"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView33"
+                        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="10+"
+                        android:textColor="@color/holud"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Happy\nCustomers"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="5+"
+                        android:textColor="@color/holud"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Awards \nWon"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView37"
+                        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="My Skills"
+            android:textColor="@color/holud"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idskillsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience &amp; Education"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/holud"
+            android:layout_marginTop="30dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idstudyRv"
+            android:layout_marginTop="30dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

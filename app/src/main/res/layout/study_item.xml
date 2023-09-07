@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/yellow_bg"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_business_center_24"
+        app:tint="@color/white" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:background="#e1e1e1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/idtvstudytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/curved_bg"
+        android:padding="8dp"
+        android:text="2020- present"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/idtvjobtitile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="App Developer - "
+        android:textColor="@color/secondery_text"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/idtvstudytime"
+        app:layout_constraintTop_toBottomOf="@+id/idtvstudytime" />
+
+    <TextView
+        android:id="@+id/idtvcompanyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:textColor="@color/secondery_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/idtvjobtitile"
+        app:layout_constraintStart_toEndOf="@+id/idtvjobtitile"
+        app:layout_constraintTop_toTopOf="@+id/idtvjobtitile" />
+
+    <TextView
+        android:id="@+id/idtvstudydescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="This is my job description for me. I live in bogura lorem ipsum dolor set"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="@+id/idtvcompanyname"
+        app:layout_constraintStart_toStartOf="@+id/idtvjobtitile"
+        app:layout_constraintTop_toBottomOf="@+id/idtvjobtitile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

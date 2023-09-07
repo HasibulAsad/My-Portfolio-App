@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/idhome"
+        android:icon="@drawable/baseline_home_24"
+        android:menuCategory="secondary"
+        android:title="Home" />
+    <item
+        android:id="@+id/idprofile"
+        android:icon="@drawable/baseline_person_24"
+        android:menuCategory="secondary"
+        android:title="Profile" />
+    <item
+        android:id="@+id/idportfolio"
+        android:icon="@drawable/baseline_business_center_24"
+        android:menuCategory="secondary"
+        android:title="Portfolio" />
+    <item
+        android:id="@+id/idmessage"
+        android:icon="@drawable/baseline_message_24"
+        android:menuCategory="secondary"
+        android:title="Message" />
+    <item
+        android:id="@+id/idchat"
+        android:icon="@drawable/chat_round"
+        android:menuCategory="secondary"
+        android:title="Chat" />
+</menu>
